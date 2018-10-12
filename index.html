@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>MY title</title>
+<head>
+<style>
+.democlass {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #000;
+    padding: 5px;
+}
+.fauxcolumns:before {content: 'Opps! This Site Wont Work because Javascript Is disable in your web browser. Please enable Javascript to your browser, Thank You Dear';
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #999;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    font-weight: 700;
+    padding: 20px;
+    font-family: sans-serif;
+    border: 4px double #FD856E;}
+.close {
+    display:none;
+}
+</style>
+</head>
+<body>
+<div class='main-content'>
+<div class='fauxcolumns'>
+<span class='close'>
+Hello World ****
+Click the button to add a class attribute with the value of "democlass" to the h1 element.
+[img="file:///D:/Download/BLOGGER%20TEMPLATE/50__Premium_Blogger_Templates/50+%20Premium%20Blogger%20Templates/Hot_Mag/Documentation/assets/images/25.png" alt="gambar" title="naon weh kuma aing"]****
+[url="http://www.bugarfit.com" title="tips kesehatan alami"]Berita tips kesehatan[/url]
+</span>
+</div>
+</div>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+document.getElementsByClassName("fauxcolumns")[0].setAttribute("class", "democlass"); 
+document.getElementsByClassName("close")[0].setAttribute("class", "open");
+}
+var msga=document.getElementsByClassName("main-content");
+for(var i=0;i<msga.length;i++){
+var txt=document.getElementsByClassName("main-content")[i].innerHTML;
+txt=txt.replace(/\*\*/ig,' <br />');
+txt=txt.replace(/\[img=(.+?)\]/ig,'<img src=$1 style="max-width:90%" rel="nofollow" />'); 
+txt=txt.replace(/\[url=(.+?)\]/ig,'<a href=$1 rel="nofollow" />'); 
+txt=txt.replace(/\[\/url\]/ig, "</a>");
+document.getElementsByClassName("main-content")[i].innerHTML=txt;
+}
+</script>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>&lt;script&gt;var Judul = (&quot;Hello Word&quot;);&lt;/script&gt;<script type='text/javascript'>//<![CDATA[
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('j c=["\\s\\e\\l\\k\\e\\f\\h\\d\\x\\a\\m\\f\\k\\e\\f\\h\\d\\t\\e\\f\\a\\b\\d\\y\\p\\f\\h\\g\\d\\t\\a\\h\\d\\s\\k\\l\\h\\d\\s\\k\\g\\h\\d\\y\\i\\k\\q\\b\\k\\q\\d\\C\\a\\p\\b\\a\\u\\m\\a\\f\\d\\D\\z\\b\\n\\m\\a\\f\\d\\E\\n\\F\\a\\u\\m\\a\\f\\d\\v\\a\\q\\a\\u\\m\\a\\f","\\d","\\q\\p\\g\\h\\b","\\i\\a\\b\\v\\e\\G","\\i\\a\\b\\v\\e\\b\\a","\\i\\a\\b\\t\\n\\l\\b\\H","\\i\\a\\b\\x\\k\\g\\g\\I\\a\\e\\f","\\b\\h\\b\\g\\a","\\n\\l\\g\\n\\e\\J","\\b\\e\\l\\i\\i\\e\\g\\g\\a\\l\\i\\z\\e\\p"];j r=(c[0]);r=r[c[2]](c[1]);j o=K L();j M=o[c[3]]();j N=o[c[4]]();j A=o[c[5]]();j B=o[c[6]]();w=O+c[1]+r[A]+c[1]+B;P[c[7]]=w;Q[c[8]]=w(c[9])',53,53,'||||||||||x65|x74|_0xac1f|x20|x61|x72|x6C|x69|x67|var|x75|x6E|x62|x6F|tgl|x70|x73|namabulan|x4A|x4D|x6D|x44|tanggallengkap|x46|x41|x6B|bulan|tahun|x53|x4F|x4E|x76|x79|x68|x59|x64|new|Date|hari|tanggal|Judul|document|window'.split('|'),0,{}))    //]]></script></b:if>
+</body>
+</html>
